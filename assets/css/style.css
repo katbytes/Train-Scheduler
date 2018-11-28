@@ -1,0 +1,65 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color:#000;
+    background-color: #fff;
+    background-image: url("../imgs/london_underground_map_op80.png");
+    background-repeat: no-repeat;
+    background-position-x: -130px;
+    background-position-y: -10px;
+    background-size: cover;
+}
+h1 {
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 600;
+}
+h2 {
+    font-family: 'Bitter', serif;
+}
+.navbar-nav {
+    padding-left: 20px;
+}
+.bg-light {
+    background-color: #f8f9fa!important;
+    border-top: 3px solid #21314D;
+}
+.container {
+    margin-top:10px;
+}
+.jumbotron {
+    font-family: 'Dosis', sans-serif;
+    text-shadow: 1px 1px #ccc);
+    color: #000;
+    margin-bottom: 10px;
+    background-color: #f8f9fa!important;
+    background-image: url("../imgs/underground_train_75.png");
+    background-position-y: -285px;
+    background-size: cover;
+}
+.mb-4, .my-4 {
+    margin-bottom: 10px!important;
+}
+#employee-table th, td {
+    display: inline-block;
+    width: 16.575%;
+}
+#employee-table th, td {
+    display: inline-block;
+    width: 20%;
+}
+.card-header {
+    color: #fff;
+    font-weight: 600;
+    background-color: #01C3A7!important;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    border-bottom: 3px solid #21314D;
+}
+.btn-outline-secondary {
+    color: #fff;
+    background-color: #21314D;
+    background-image: none;
+    border-color: #6c757d;
+}
+#footer {
+    background-color: #21314D!important;
+}
