@@ -39,11 +39,9 @@ h2 {
     margin-bottom: 10px!important;
 }
 #employee-table th, td {
-    display: inline-block;
     width: 16.575%;
 }
 #employee-table th, td {
-    display: inline-block;
     width: 20%;
 }
 .card-header {
@@ -53,7 +51,7 @@ h2 {
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     border-bottom: 3px solid #21314D;
-}
+} 
 .btn-outline-secondary {
     color: #fff;
     background-color: #21314D;
