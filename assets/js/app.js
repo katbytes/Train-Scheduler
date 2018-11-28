@@ -47,7 +47,7 @@ $("#add-employee-btn").on("click", function (event) {
   console.log(newEmp.start);
   console.log(newEmp.rate);
 
-  alert("Employee successfully added");
+  // alert("Employee successfully added");
 
   // Clears all of the text-boxes
   $("#employee-name-input").val("");

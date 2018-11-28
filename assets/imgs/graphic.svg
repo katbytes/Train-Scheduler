@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="182" height="113" viewBox="0 0 182 113">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+        <path stroke="#072456" stroke-linecap="round" stroke-width="2" d="M0 110.01h180"/>
+        <path fill="#F2F7FF" fill-rule="nonzero" stroke="#072456" stroke-width="2" d="M140.08 98.94h7l-.2-66a8.24 8.24 0 0 0-8.12-8.33l-102 .33a8.23 8.23 0 0 0-8.07 8.38l.2 66h7"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#072456" stroke-width="2" d="M147.08 50.91l-.2-18a8.24 8.24 0 0 0-8.12-8.33l-102 .33a8.23 8.23 0 0 0-8.07 8.38l.2 18"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M147 35.48l-.1-2.61a8.24 8.24 0 0 0-8.12-8.33l-102 .33a8.23 8.23 0 0 0-8.07 8.38l.1 2.61L147 35.48z"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#072456" stroke-width="2" d="M16.647 99.307l143.23-.425.002 1.08c.016 5.385-4.336 9.763-9.72 9.78l-124.44.368a9.75 9.75 0 0 1-9.729-9.71l-.001-.38a.71.71 0 0 1 .708-.713h-.05z"/>
+        <rect width="33.93" height="61.85" x="127.57" y="47.68" fill="#FFF" fill-rule="nonzero" stroke="#072456" stroke-width="2" rx="6.39"/>
+        <path fill="#FFF" fill-rule="nonzero" stroke="#072456" stroke-width="2" d="M127.57 57.86h33.93v41.35h-33.93z"/>
+        <path fill="#033F85" fill-rule="nonzero" d="M127.82 100.16V57.97h33.43v42.19"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M127.82 100.16V69.63h33.43v30.53"/>
+        <path stroke="#072456" stroke-width="2" d="M161.25 99.2l-33.95-.22M127.36 57.86l33.95.22M127.57 57.86h33.93v41.35h-33.93z"/>
+        <g stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" opacity=".1">
+            <path d="M134.16 77.08h20.33M134.16 84.43h20.33M134.16 92.31h20.33"/>
+        </g>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M137.48 63.69h4.31" opacity=".3"/>
+        <circle cx="133.15" cy="63.76" r="1.92" fill="#FFF" fill-rule="nonzero"/>
+        <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M152.22 63.69h4.3" opacity=".3"/>
+        <circle cx="147.88" cy="63.76" r="1.92" fill="#01C3A7" fill-rule="nonzero"/>
+        <path fill="#01C3A7" fill-rule="nonzero" d="M145.77 68.34h12.4v1.24h-12.4z"/>
+        <path fill="#01C3A7" fill-rule="nonzero" stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M73.5 46.65a20.84 20.84 0 0 0 2.23-16.84 23.32 23.32 0 1 1 22.4 16.84H73.5z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M88.61 32.69a3.56 3.56 0 0 1-.9-2.38V18.06h-.91V19a.9.9 0 1 1-1.8 0v-1.8a.9.9 0 0 1 .9-.9h1.81v-2a1 1 0 0 1 .82-.95 60.62 60.62 0 0 1 17.74 0 1 1 0 0 1 .83.95v2h1.81a.9.9 0 0 1 .9.9V19a.91.91 0 0 1-1.81 0v-.9h-.9v12.21a3.56 3.56 0 0 1-.9 2.38v2a.9.9 0 0 1-1.8 0v-.94a3.22 3.22 0 0 1-.76.09H91.17a3.22 3.22 0 0 1-.76-.09v.94a.9.9 0 1 1-1.8 0v-2zm16.24-8.77V15a57.1 57.1 0 0 0-15.34 0v9l15.34-.08zm0 1.81H89.51v4.68A1.57 1.57 0 0 0 91 32h12.32a1.58 1.58 0 0 0 1.51-1.63l.02-4.64zM94 28.66a1.13 1.13 0 1 1-2.26 0 1.13 1.13 0 0 1 2.26 0zm9 0a1.13 1.13 0 1 1-2.26 0 1.13 1.13 0 0 1 2.26 0zm-8.51-10.6a.9.9 0 1 1 0-1.8h5.75a.9.9 0 0 1 0 1.8h-5.75z"/>
+        <path stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.54" d="M43.96 43.82h5.45" opacity=".1"/>
+        <circle cx="38.46" cy="43.9" r="2.43" fill="#072456" fill-rule="nonzero"/>
+        <path stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.54" d="M62.63 43.82h5.46" opacity=".1"/>
+        <circle cx="57.13" cy="43.9" r="2.43" fill="#01C3A7" fill-rule="nonzero"/>
+        <path fill="#01C3A7" fill-rule="nonzero" d="M54.45 49.7h15.72v1.58H54.45z"/>
+        <path stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M37.66 61.58h20.33M37.66 68.93h20.33M37.66 76.81h20.33M70.41 61.58h20.33M70.41 68.93h20.33M70.41 76.81h20.33M101.51 61.58h3.99M101.51 68.93h3.99M101.51 76.81h3.99M37.66 84.83h20.33M37.66 92.18h20.33M70.41 84.83h20.33M70.41 92.18h20.33M101.51 84.83h3.99M101.51 92.18h3.99" opacity=".1"/>
+        <path stroke="#072456" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M62.98 61.58h2.49M62.98 68.93h2.49M62.98 76.81h2.49M62.98 84.83h2.49M62.98 92.18h2.49" opacity=".3"/>
+    </g>
+</svg>

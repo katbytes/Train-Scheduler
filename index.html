@@ -5,7 +5,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Employee Tracker</title>
+  <title>Train Time</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -18,31 +18,124 @@
   <!-- Moment.js Reference -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Bitter:700|Dosis|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+
+  <!-- Embedded CSS -->
   <style>
-    #employee-table th,
-    td {
-      display: inline-block;
-      width: 16.575%;
-    }
+    body {
+     font-family: 'Open Sans', sans-serif;
+     color:#000;
+     background-color: #fff;
+     background-image: url("./assets/imgs/london_underground_map_op80.png");
+     background-repeat: no-repeat;
+     background-position-x: -130px;
+     background-position-y: -10px;
+     background-size: cover;
+}
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+ h2 {
+     font-family: 'Bitter', serif;
+}
+ .navbar-nav {
+     padding-left: 20px;
+}
+ .bg-light {
+     background-color: #f8f9fa!important;
+     border-top: 3px solid #21314D;
+}
+ .container {
+     margin-top:10px;
+}
+ .jumbotron {
+     font-family: 'Dosis', sans-serif;
+     text-shadow: 1px 1px #ccc);
+     color: #000;
+     margin-bottom: 10px;
+     background-color: #fff;
+     background-image: url("./assets/imgs/underground_train_75.png");
+     background-position-y: -285px;
+     background-size: cover;
+}
+ .mb-4, .my-4 {
+     margin-bottom: 10px!important;
+}
+ #employee-table th, td {
+     display: inline-block;
+     width: 16.575%;
+}
+ #employee-table th, td {
+     display: inline-block;
+     width: 20%;
+}
+ .card-header {
+     color: #fff;
+     font-weight: 600;
+     background-color: #01C3A7;
+     padding: .75rem 1.25rem;
+     margin-bottom: 0;
+     border-bottom: 3px solid #21314D;
+}
+ .btn-outline-secondary {
+     color: #fff;
+     background-color: #21314D;
+     background-image: none;
+     border-color: #6c757d;
+}
+ #footer {
+     background-color: #21314D;
+}
   </style>
 </head>
 
 <body>
 
-  <!-- Employee Tracker -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <h2>traintime</h2>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Live Departures<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Season Passes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Register</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-warning btn-sm my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Container -->
   <div class="container">
 
     <!-- Jumbotron -->
-    <div class="jumbotron" style="background-color: #99cccc; color: white">
-      <h1 class="text-center">Train Time</h1>
+    <div class="jumbotron">
+      <h1 class="text-center">London Underground <i class="fas fa-subway"></i></h1>
       <h3 class="text-center">A Comprehensive Directory of Transit Times</h3>
     </div>
 
+    <!-- Train Schedule -->
     <div class="row">
-
       <div class="col-md-12">
-
-        <!-- Current Employees-->
         <div class="card mb-4">
           <div class="card-header">Current Train Schedule</div>
           <div class="card-body">
@@ -54,7 +147,6 @@
                   <th scope="col">Frequency (min)</th>
                   <th scope="col">Next Arrival</th>
                   <th scope="col">Minutes Away</th>
-                  <!-- <th scope="col">Total Billed ($)</th> -->
                 </tr>
               </thead>
               <tbody>
@@ -65,32 +157,72 @@
       </div>
     </div>
 
+    <!-- Add Train -->
     <div class="row">
       <div class="col-md-12">
-        <!-- Add Employee  -->
         <div class="card mb-4">
           <div class="card-header">Add Train</div>
           <div class="card-body">
-
-            <!-- Entry Form -->
             <form>
-              <div class="form-group">
+              <!-- Train Name -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="employee-name-input">Train Name</label>
+                </div>
+                <select class="custom-select" id="employee-name-input">
+                  <option selected>Choose...</option>
+                  <option value="Bakerloo">Bakerloo</option>
+                  <option value="Central">Central</option>
+                  <option value="Circle">Circle</option>
+                  <option value="District">District</option>
+                  <option value="Hammersmith & City">Hammersmith & City</option>
+                  <option value="Jubilee">Jubilee</option>
+                  <option value="Metropolitan">Metropolitan</option>
+                  <option value="Northern">Northern</option>
+                  <option value="Picadilly">Picadilly</option>
+                  <option value="Victoria">Victoria</option>
+                  <option value="Waterloo">Waterloo & City</option>
+                </select>
+              </div>
+              <!-- Existing Code -->
+              <!-- <div class="form-group">
                 <label for="employee-name-input">Train Name</label>
                 <input class="form-control" id="employee-name-input" placeholder="Jane Doe" type="text">
+              </div> -->
+              <!-- Destination -->
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="role-input">Destination</label>
+                </div>
+                <select class="custom-select" id="role-input">
+                  <option selected>Choose...</option>
+                  <option value="Tower Bridge">Tower Bridge</option>
+                  <option value="Millennium Bridge">Millennium Bridge</option>
+                  <option value="St Paul's Cathedral">St Paul's Cathedral</option>
+                  <option value="Big Ben">Big Ben</option>
+                  <option value="Parliament">Parliament</option>
+                  <option value="Westminster Abbey">Westminster Abbey</option>
+                  <option value="Buckingham Palace">Buckingham Palace</option>
+                  <option value="London Eye">London Eye</option>
+                  <option value="Royal Albert Hall">Royal Albert Hall</option>
+                  <option value="Trafalgar Square">Trafalgar Square</option>
+                  <option value="Churchill War Rooms">Churchill War Rooms</option>
+                </select>
               </div>
-              <div class="form-group">
+              <!-- Existing Code -->
+              <!-- <div class="form-group">
                 <label for="role-input">Destination</label>
                 <input class="form-control" id="role-input" placeholder="CEO" type="text">
+              </div> -->
+              <div class="form-group">
+                <label for="start-input">First Train Time</label>
+                <input class="form-control" id="start-input" placeholder="HH:mm" type="text">
               </div>
               <div class="form-group">
-                <label for="start-input">First Train Time (HH:mm - military time)</label>
-                <input class="form-control" id="start-input" placeholder="01/08/1989" type="text">
+                <label for="rate-input">Frequency</label>
+                <input class="form-control" id="rate-input" placeholder="Minutes" type="text">
               </div>
-              <div class="form-group">
-                <label for="rate-input">Frequency (min)</label>
-                <input class="form-control" id="rate-input" placeholder="200000" type="text">
-              </div>
-              <button class="btn btn-info float-right" id="add-employee-btn">Submit</button>
+              <button class="btn btn-warning" id="add-employee-btn">Submit</button>
             </form>
 
           </div>
@@ -98,6 +230,18 @@
       </div>
     </div>
 
+  </div>
+  <!-- Footer -->
+  <div class="card text-center">
+    <div class="card-header" id="footer"><img src="./assets/imgs/graphic.svg">
+    </div>
+    <div class="card-body">
+      <p class="card-text"><a href="#">News</a> | <a href="#">Careers</a> | <a href="#">Affiliates</a> | <a href="#">FAQs</a>
+        | <a href="#">Contact Us</a></p>
+    </div>
+    <div class="card-footer text-muted">
+      <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
+    </div>
   </div>
 
   <!-- JavaScript -->
