@@ -1,6 +1,5 @@
 # Train-Scheduler
-UCSD - Firebase, Moment.js, JavaScript, jQuery
-https://katbytes.github.io/Train-Scheduler/
+UCSD - Firebase, Moment.js, JavaScript, jQuery - https://katbytes.github.io/Train-Scheduler/
 
 A train schedule application that incorporates Firebase to host arrival and departure data. 
 This app will retrieve and manipulate this information with Moment.js. 
