@@ -77,8 +77,8 @@ database.ref().on("child_added", function (childSnapshot) {
   var empMonths = today.diff(momentEmpStart, 'months');
 
   // Calculate the total billed rate
-  var empBilled = empMonths * empRate;
-  console.log(empBilled);
+  // var empBilled = empMonths * empRate;
+  // console.log(empBilled);
 
   // Create the new row
   var newRow = $("<tr>").append(
@@ -87,7 +87,7 @@ database.ref().on("child_added", function (childSnapshot) {
     $("<td>").text(empStart),
     $("<td>").text(empMonths),
     $("<td>").text(empRate),
-    $("<td>").text(empBilled)
+    // $("<td>").text(empBilled)
   );
 
   // Append the new row to the table
